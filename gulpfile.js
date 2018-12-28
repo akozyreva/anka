@@ -11,7 +11,12 @@ var gulpStylus = require('gulp-stylus');
 var gulpConcat  = require('gulp-concat');
 var gulpPug  = require('gulp-pug');
 var less = require('gulp-less');
+var ghPages = require('gulp-gh-pages');
 
+gulp.task('deploy', function() {
+    return gulp.src('./build/**/*')
+        .pipe(ghPages());
+});
 gulp.task('default', function() {
 	gulp.start('styles');
   gulp.start('less');
@@ -91,7 +96,7 @@ gulp.task('pug', function() {
   	 //gulp.src('./templates/**/*.pug')
      gulp.src('./templates/*.pug')
     .pipe(gulpPug())
-    .pipe(gulp.dest('./build/templates'));
+    .pipe(gulp.dest('./build'));
    
 });
 

@@ -15,10 +15,13 @@
     "jade": "^1.11.0",
     "lodash": "^4.17.11"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-gh-pages": "^0.5.4"
+  },
   "scripts": {
     "dev": "gulp watch",
-    "start": "node server.js"
+    "start": "node server.js",
+    "deploy": "gulp deploy"
   },
   "author": "akozyreva",
   "license": "ISC"
