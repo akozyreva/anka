@@ -18,13 +18,14 @@ gulp.task('deploy', function() {
         .pipe(ghPages());
 });
 gulp.task('default', function() {
-	gulp.start('styles');
+    gulp.start('styles');
   gulp.start('less');
 	gulp.start('scripts');
 	gulp.start('pug');
   gulp.start('fonts');
   gulp.start('images');
   gulp.start('css');
+  gulp.start('pdf');
 });
 
 gulp.task('styles', function() {
@@ -74,6 +75,11 @@ gulp.task('fonts', function() {
      gulp.src('./fonts/**/*.*')
 
     .pipe(gulp.dest('./build/fonts'));   
+});
+
+gulp.task('pdf', function() {
+    gulp.src('./*.pdf')
+        .pipe(gulp.dest('./build'));
 });
 
 gulp.task('images', function() {
