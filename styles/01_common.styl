@@ -1,0 +1,44 @@
+ul,li
+	list-style-type none
+a
+	text-decoration none
+	color black
+
+*
+	padding 0
+	margin 0
+	font-size 22px
+	//font-family "Lato-Regular"
+*:focus {
+    outline: none;
+}
+
+textarea {
+
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
+input[type="submit"]{
+	border: none;
+}
+
+
+
+//========
+.section-title
+	font-size 40px
+	font-family "OpenSans-Semibold"
+	text-transform uppercase
+	text-align center
+	position relative
+	&:after
+		content ''
+		background-color black
+		width 85px
+		height 6px	
+		position relative
+		//это св-во сделало псевдоэл видимым
+		display block
+		margin 30px auto
