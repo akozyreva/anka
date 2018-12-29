@@ -16,6 +16,7 @@
     "lodash": "^4.17.11"
   },
   "devDependencies": {
+    "gift": "^0.10.2",
     "gulp-gh-pages": "^0.5.4"
   },
   "scripts": {
