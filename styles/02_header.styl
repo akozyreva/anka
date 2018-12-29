@@ -44,8 +44,6 @@
 		font-family "OpenSans-Extrabold"
 		font-size 85px
 		margin-left 186px
-.wrapper-title
-	margin-bottom 240px	
 .wrapper-title:after
 	content ''
 	background-color white
@@ -77,15 +75,22 @@ ul.menu li a,ul.menu-mobile li a
 	text-transform uppercase
 	line-height 40px
 	width max-conetent
-
+.wrapper-container-fix-position
+	position absolute
+	top 10%
+	left 10%
 .container
 	max-width 1170px
 	position relative
 	margin 0 auto
 .container-header
 	max-width 1355px
-	position relative
-	margin 0 auto 
+	//position relative
+	position: absolute
+	top 0
+	left 0
+	min-width 100%
+	margin 0 auto
 	margin-bottom 165px
 	padding-top 50px	
 .wrapper-soc-icons
@@ -112,3 +117,5 @@ header.site-header
 						display none
 .menu-arrow
 	display none
+video
+	width inherit
